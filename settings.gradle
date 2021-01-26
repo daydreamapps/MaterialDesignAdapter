@@ -1,4 +1,4 @@
-include ':bindingrecycler-debug'
+//include ':bindingrecycler-debug'
 include ':adapter'
 include ':sample'
 rootProject.name = "MaterialDesignAdapter"
