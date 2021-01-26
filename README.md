@@ -7,5 +7,7 @@ Extension of [DataBindingRecycler](https://github.com/daydreamapps/DataBindingRe
 ## Installation
 
 ```Groovy
-implementation "com.daydreamapplications:recycleradapter:{version}}"
+implementation "com.daydreamapplications:recycleradapter:{version}"
 ```
+
+#### CAUTION: pre-release version, still under development
