@@ -1,0 +1,24 @@
+{
+  "result": [
+    {
+      "name": "Avocado",
+      "description": "Salted avocado & soft-boiled eggs on sourdough bread.",
+      "imageUrl": "Pending..."
+    },
+    {
+      "name": "Chicken",
+      "description": "Herb and garlic basted chicken thighs with rice.",
+      "imageUrl": "Pending..."
+    },
+    {
+      "name": "Omelette",
+      "description": "Tender Omlette with Boursin toast & garlic mushrooms",
+      "imageUrl": "Pending..."
+    },
+    {
+      "name": "Rigatoni",
+      "description": "Rigatoni in with a lightly spiced red sauce.",
+      "imageUrl": "Pending..."
+    }
+  ]
+}
