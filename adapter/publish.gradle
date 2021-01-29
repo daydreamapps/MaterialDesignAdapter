@@ -3,8 +3,8 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
 ext {
-    libraryVersionCode = 2
-    libraryVersion = "0.2.0"
+    libraryVersionCode = 3
+    libraryVersion = "0.3.0-alpha1"
 
     bintrayRepo = 'material'
     bintrayName = 'recycleradapter'
