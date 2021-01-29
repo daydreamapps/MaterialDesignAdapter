@@ -1,0 +1,24 @@
+{
+  "result": [
+    {
+      "name": "Avocado & Eggs on Toast",
+      "description": "Salted avocado & soft-boiled eggs on sourdough bread.",
+      "imageUrl": "https://raw.githubusercontent.com/daydreamapps/MaterialDesignAdapter/master/sample/assets/avocado.jpg"
+    },
+    {
+      "name": "Garlic Chicken",
+      "description": "Herb and garlic basted chicken thighs with rice.",
+      "imageUrl": "https://raw.githubusercontent.com/daydreamapps/MaterialDesignAdapter/master/sample/assets/chicken.jpg"
+    },
+    {
+      "name": "Omelette Breakfast",
+      "description": "Tender Omlette with Boursin toast & garlic mushrooms",
+      "imageUrl": "https://raw.githubusercontent.com/daydreamapps/MaterialDesignAdapter/master/sample/assets/omelette.jpg"
+    },
+    {
+      "name": "Rigatoni w. Red-Sauce",
+      "description": "Rigatoni in with a lightly spiced red sauce.",
+      "imageUrl": "https://raw.githubusercontent.com/daydreamapps/MaterialDesignAdapter/master/sample/assets/rigatoni.jpg"
+    }
+  ]
+}
