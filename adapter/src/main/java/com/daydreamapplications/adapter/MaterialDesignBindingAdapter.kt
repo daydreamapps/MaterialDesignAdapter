@@ -10,9 +10,9 @@ class MaterialDesignBindingAdapter(
     override fun getItemLayoutRes(position: Int): Int = viewModels[position].layout
 
     override fun onClick(rootView: View, viewModel: HasLayoutBinding) {
-        if (viewModel is OnClickWithNavigationBundle) {
+        if (viewModel is OnClickWithNavigationOptions) {
             val activityOptionsCompat = TransitionOptions.constructOptions(rootView)
-            viewModel.onClick(rootView, activityOptionsCompat)
+            viewModel.onClick(rootView, activityOptionsCompat?.toBundle())
         }
         super.onClick(rootView, viewModel)
     }

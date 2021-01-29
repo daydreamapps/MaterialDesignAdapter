@@ -1,18 +1,20 @@
 package com.daydreamapplications.materialdesignadapter
 
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
 import com.daydreamapplications.adapter.MaterialDesignBindingAdapter
-import com.daydreamapplications.adapter.OnClickWithNavigationBundle
+import com.daydreamapplications.adapter.OnClickWithNavigationOptions
 import com.daydreamapplications.adapter.data.MaterialDesignListItem
 import com.daydreamapplications.adapter.layouts.OneLineLayouts
 import com.daydreamapplications.adapter.layouts.ThreeLineLayouts
 import com.daydreamapplications.adapter.layouts.TwoLineLayouts
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityMainBinding
 import com.google.gson.Gson
+import kotlinx.android.parcel.Parcelize
 import java.io.BufferedReader
 
 
@@ -47,26 +49,27 @@ data class FoodItemsResponse(
     val result: List<FoodItem>
 )
 
+@Parcelize
 data class FoodItem(
     val name: String,
     val description: String,
     val imageUrl: String
-)
+): Parcelable
 
 data class FoodListItem(
     private val foodItem: FoodItem,
     @LayoutRes override val layout: Int
-) : MaterialDesignListItem, OnClickWithNavigationBundle {
+) : MaterialDesignListItem, OnClickWithNavigationOptions {
 
     override val firstLine: String get() = foodItem.name
     override val secondLine: String get() = foodItem.description
     override val visual: Any? get() = foodItem.imageUrl
 
-    override fun onClick(view: View, activityOptionsCompat: ActivityOptionsCompat?) {
+    override fun onClick(view: View, options: Bundle?) {
         DetailsActivity.startActivity(
             context = view.context,
-            title = firstLine,
-            options = activityOptionsCompat?.toBundle()
+            foodItem = foodItem,
+            options = options
         )
     }
 

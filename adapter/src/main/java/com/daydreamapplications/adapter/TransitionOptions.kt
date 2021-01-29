@@ -5,9 +5,9 @@ import android.view.View
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
 
-object TransitionOptions {
+internal object TransitionOptions {
 
-    fun constructOptions(rootView: View?): ActivityOptionsCompat? {
+    internal fun constructOptions(rootView: View?): ActivityOptionsCompat? {
         val transitionViews: Array<Pair<View, String>> = listOfNotNull(
             transitionPair(ViewUtils.firstLine(rootView), TransitionNames.firstLine),
             transitionPair(ViewUtils.secondLine(rootView), TransitionNames.secondLine),
@@ -18,7 +18,7 @@ object TransitionOptions {
         return constructOptions(rootView, transitionViews)
     }
 
-    private fun constructOptions(
+    internal fun constructOptions(
         view: View?,
         transitionViews: Array<Pair<View, String>>
     ): ActivityOptionsCompat? {
@@ -30,7 +30,7 @@ object TransitionOptions {
         }
     }
 
-    private fun transitionPair(view: View?, name: String): Pair<View, String>? {
+    internal fun transitionPair(view: View?, name: String): Pair<View, String>? {
         return if (view != null) {
             Pair.create(view, name)
         } else null
