@@ -11,7 +11,7 @@ class MaterialDesignBindingAdapter(
 
     override fun onClick(rootView: View, viewModel: HasLayoutBinding) {
         if (viewModel is OnClickWithNavigationBundle) {
-            val activityOptionsCompat = MapSharedElements.constructActivityOptions(rootView)
+            val activityOptionsCompat = TransitionOptions.constructOptions(rootView)
             viewModel.onClick(rootView, activityOptionsCompat)
         }
         super.onClick(rootView, viewModel)
@@ -19,6 +19,6 @@ class MaterialDesignBindingAdapter(
 
     override fun onBindViewHolder(holder: BindingRecyclerView.ViewHolder, position: Int) {
         super.onBindViewHolder(holder, position)
-        MapSharedElements.assignTransitionNames(holder, position)
+        TransitionNames.assignToViewInPosition(holder.itemView, position)
     }
 }

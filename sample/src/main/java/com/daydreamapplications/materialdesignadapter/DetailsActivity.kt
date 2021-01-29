@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import com.daydreamapplications.adapter.MapSharedElements
+import com.daydreamapplications.adapter.TransitionNames
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class DetailsActivity : AppCompatActivity() {
         ActivityDetailsBinding.inflate(layoutInflater)
             .apply {
                 title.text = intent.getStringExtra("title") ?: "Title missing"
-                title.transitionName = MapSharedElements.NAME_FIRST_LINE
+                title.transitionName = TransitionNames.firstLine
                 setContentView(root)
             }
     }
