@@ -3,10 +3,7 @@ package com.daydreamapplications.adapter.layouts
 import androidx.annotation.LayoutRes
 import com.daydreamapplications.adapter.R
 
-object ThreeLineLayouts: VisualType {
-
-    @get:LayoutRes
-    val overline: Int = R.layout.item_three_line_overline
+object ThreeLineLayouts : VisualType {
 
     @get:LayoutRes
     override val none: Int = R.layout.item_three_line_no_visual

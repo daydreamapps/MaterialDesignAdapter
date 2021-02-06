@@ -14,10 +14,6 @@ internal object ViewUtils {
         return rootView?.findViewById(R.id.second_line)
     }
 
-    internal fun overLine(rootView: View?): TextView? {
-        return rootView?.findViewById(R.id.overline)
-    }
-
     internal fun visualStart(rootView: View?): ImageView? {
         return rootView?.findViewById(R.id.visual_start)
     }
