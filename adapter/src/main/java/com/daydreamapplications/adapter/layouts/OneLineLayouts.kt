@@ -3,20 +3,17 @@ package com.daydreamapplications.adapter.layouts
 import androidx.annotation.LayoutRes
 import com.daydreamapplications.adapter.R
 
-object OneLineLayouts: MaterialLayouts {
+object OneLineLayouts: VisualType {
 
     @get:LayoutRes
-    override val noVisual: Int = R.layout.item_one_line_no_visual
+    override val none: Int = R.layout.item_one_line_no_visual
 
     @get:LayoutRes
-    override val visualSmall: Int = R.layout.item_one_line_visual_small
+    override val small: Int = R.layout.item_one_line_visual_small
 
     @get:LayoutRes
-    override val visualStandard: Int = R.layout.item_one_line_visual_standard
+    override val medium: Int = R.layout.item_one_line_visual_standard
 
     @get:LayoutRes
-    val visualLarge: Int = R.layout.item_one_line_visual_large
-
-    @get:LayoutRes
-    override val visualExtraLarge: Int = R.layout.item_one_line_visual_extra_large
+    override val large: Int = R.layout.item_one_line_visual_large
 }

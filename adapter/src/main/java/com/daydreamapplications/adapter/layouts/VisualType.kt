@@ -2,17 +2,17 @@ package com.daydreamapplications.adapter.layouts
 
 import androidx.annotation.LayoutRes
 
-interface MaterialLayouts {
+interface VisualType {
 
     @get:LayoutRes
-    val noVisual: Int
+    val none: Int
 
     @get:LayoutRes
-    val visualSmall: Int
+    val small: Int
 
     @get:LayoutRes
-    val visualStandard: Int
+    val medium: Int
 
     @get:LayoutRes
-    val visualExtraLarge: Int
+    val large: Int
 }

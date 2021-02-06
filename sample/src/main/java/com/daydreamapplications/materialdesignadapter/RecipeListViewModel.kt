@@ -32,7 +32,7 @@ data class RecipeListItem(
     override val firstLine: String get() = foodItem.name
     override val secondLine: String get() = foodItem.description
     override val visual: Any? get() = foodItem.imageUrl
-    override val layout: Int get() = TwoLineLayouts.visualStandard
+    override val layout: Int get() = TwoLineLayouts.medium
 
     override fun onClick(view: View, options: Bundle?) {
         DetailsActivity.startActivity(

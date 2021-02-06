@@ -16,9 +16,8 @@
 
         <ImageView
             android:id="@+id/visual_start"
-            android:layout_width="56dp"
+            android:layout_width="100dp"
             android:layout_height="56dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:scaleType="centerCrop"
