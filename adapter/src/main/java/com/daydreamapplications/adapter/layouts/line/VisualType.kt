@@ -1,4 +1,4 @@
-package com.daydreamapplications.adapter.layouts
+package com.daydreamapplications.adapter.layouts.line
 
 import androidx.annotation.LayoutRes
 

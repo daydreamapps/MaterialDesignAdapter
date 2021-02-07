@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.daydreamapplications.adapter.OnClickWithNavigationOptions
 import com.daydreamapplications.adapter.data.MaterialDesignListItem
-import com.daydreamapplications.adapter.layouts.TwoLineLayouts
+import com.daydreamapplications.adapter.layouts.line.TwoLineLayouts
 
 class RecipeListViewModel(
     private val recipeApi: RecipeApi
@@ -23,7 +23,6 @@ class RecipeListViewModel(
         recipes.map(::RecipeListItem)
     }
 }
-
 
 data class RecipeListItem(
     private val foodItem: FoodItem

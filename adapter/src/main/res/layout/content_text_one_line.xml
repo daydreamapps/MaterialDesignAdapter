@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.daydreamapplications.adapter.data.MaterialDesignListItem" />
+
+    </data>
+
+    <TextView
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/font_size_title"
+        app:bindText="@{viewModel.firstLine}"
+        tools:text="Single line item" />
+
+</layout>
