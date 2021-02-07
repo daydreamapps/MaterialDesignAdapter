@@ -27,7 +27,7 @@ class NetworkDemoActivity : AppCompatActivity() {
         val materialDesignBindingAdapter = MaterialDesignBindingAdapter()
 
         recyclerView.adapter = materialDesignBindingAdapter
-        recyclerView.addItemDecoration(Decorators.cardMargin)
+        recyclerView.addItemDecoration(Decorators.cardMarginMedium)
 
         dataProvider.recipeListItems.observe(this@NetworkDemoActivity, Observer {
             materialDesignBindingAdapter.viewModels = it

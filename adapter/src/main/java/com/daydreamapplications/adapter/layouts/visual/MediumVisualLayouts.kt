@@ -2,7 +2,7 @@ package com.daydreamapplications.adapter.layouts.visual
 
 import com.daydreamapplications.adapter.R
 
-object MediumVisual : LineCount {
+object MediumVisualLayouts : LineCount {
 
     override val one: Int
         get() = R.layout.card_medium_one_line

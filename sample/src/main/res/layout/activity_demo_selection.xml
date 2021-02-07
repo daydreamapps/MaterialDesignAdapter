@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:scrollbars="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Further Examples" />
+        android:text="By Line Count"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_one_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One Line" />
+
+    <Button
+        android:id="@+id/button_two_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Two Line" />
+
+    <Button
+        android:id="@+id/button_three_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Three Line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="By Visual Size"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_text_only"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Only" />
+
+    <Button
+        android:id="@+id/button_small_visual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Small Visual" />
+
+    <Button
+        android:id="@+id/button_medium_visual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Visual" />
+
+    <Button
+        android:id="@+id/button_large_visual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Visual" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Further Examples"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_network_example"

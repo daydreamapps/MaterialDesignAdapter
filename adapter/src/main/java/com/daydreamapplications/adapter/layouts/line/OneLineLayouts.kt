@@ -12,7 +12,7 @@ object OneLineLayouts : VisualType {
     override val small: Int = R.layout.card_small_one_line
 
     @get:LayoutRes
-    override val medium: Int = R.layout.card_medium_two_line
+    override val medium: Int = R.layout.card_medium_one_line
 
     @get:LayoutRes
     override val large: Int = R.layout.card_large_one_line

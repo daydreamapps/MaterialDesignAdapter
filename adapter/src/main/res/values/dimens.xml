@@ -2,11 +2,10 @@
 <resources>
 
     <!--  Card  -->
-    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
     <dimen name="card_radius">4dp</dimen>
 
     <!--  Margins  -->
-    <dimen name="card_margin">4dp</dimen>
     <dimen name="content_margin_small">8dp</dimen>
     <dimen name="content_margin_standard">16dp</dimen>
 
@@ -25,5 +24,9 @@
 
     <!--  Card Height Three Line  -->
     <dimen name="card_height_three_line">88dp</dimen>
+
+    <!--  Decoration  -->
+    <dimen name="card_decoration_margin_small">4dp</dimen>
+    <dimen name="card_decoration_margin_medium">8dp</dimen>
 
 </resources>
