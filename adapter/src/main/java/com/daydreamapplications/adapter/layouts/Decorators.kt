@@ -8,8 +8,11 @@ import com.daydreamapplications.adapter.R
 
 object Decorators {
 
-    val cardMargin: RecyclerView.ItemDecoration
-        get() = MarginItemDecoration(R.dimen.card_margin)
+    val cardMarginSmall: RecyclerView.ItemDecoration
+        get() = MarginItemDecoration(R.dimen.card_decoration_margin_small)
+
+    val cardMarginMedium: RecyclerView.ItemDecoration
+        get() = MarginItemDecoration(R.dimen.card_decoration_margin_medium)
 
     class MarginItemDecoration(@DimenRes private val margin: Int) : RecyclerView.ItemDecoration() {
 

@@ -2,7 +2,7 @@ package com.daydreamapplications.adapter.layouts.visual
 
 import com.daydreamapplications.adapter.R
 
-object TextOnly : LineCount {
+object TextOnlyLayouts : LineCount {
 
     override val one: Int
         get() = R.layout.card_text_only_one_line
