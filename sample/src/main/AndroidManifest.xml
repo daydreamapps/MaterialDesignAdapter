@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name=".simple.lines.OneLineListItemsActivity"/>
+        <activity android:name=".simple.lines.TwoLineListItemsActivity"/>
 
         <activity android:name=".simple.visual.TextOnlyListItemsActivity"/>
         <activity android:name=".simple.visual.SmallVisualItemsSampleActivity"/>

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityDemoSelectionBinding
 import com.daydreamapplications.materialdesignadapter.network.NetworkDemoActivity
 import com.daydreamapplications.materialdesignadapter.simple.lines.OneLineListItemsActivity
+import com.daydreamapplications.materialdesignadapter.simple.lines.TwoLineListItemsActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.LargeVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.MediumVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.SmallVisualItemsSampleActivity
@@ -27,13 +28,16 @@ class DemoSelectionActivity : AppCompatActivity() {
 
     private fun initButtons(binding: ActivityDemoSelectionBinding) {
 
-        //  Simple Examples
+        // By Line Count
+        binding.buttonOneLine.setOnClickListener { startActivity(OneLineListItemsActivity::class) }
+        binding.buttonTwoLine.setOnClickListener { startActivity(TwoLineListItemsActivity::class) }
+
+        // By Visual Size
         binding.buttonTextOnly.setOnClickListener { startActivity(TextOnlyListItemsActivity::class) }
         binding.buttonSmallVisual.setOnClickListener { startActivity(SmallVisualItemsSampleActivity::class) }
         binding.buttonMediumVisual.setOnClickListener { startActivity(MediumVisualItemsSampleActivity::class) }
         binding.buttonLargeVisual.setOnClickListener { startActivity(LargeVisualItemsSampleActivity::class) }
 
-        binding.buttonOneLine.setOnClickListener { startActivity(OneLineListItemsActivity::class) }
 
         // Further Examples
         binding.buttonNetworkExample.setOnClickListener { startActivity(NetworkDemoActivity::class) }
