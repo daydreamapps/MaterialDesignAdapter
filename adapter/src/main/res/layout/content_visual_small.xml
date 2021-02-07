@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.daydreamapplications.adapter.data.MaterialDesignListItem" />
+
+    </data>
+
+    <ImageView
+        android:id="@+id/visual_start"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        app:bindImage="@{viewModel.visual}"
+        tools:background="@android:color/holo_purple" />
+
+</layout>

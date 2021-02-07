@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Card  -->
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+
+    <!--  Margins  -->
+    <dimen name="card_margin">4dp</dimen>
+    <dimen name="content_margin_small">8dp</dimen>
+    <dimen name="content_margin_standard">16dp</dimen>
+
+    <!--  Font Size  -->
+    <dimen name="font_size_title">18sp</dimen>
+    <dimen name="font_size_subtitle">14sp</dimen>
+
+    <!--  Card Height Single Line  -->
+    <dimen name="card_height_one_line_no_visual">48dp</dimen>
+    <dimen name="card_height_one_line_standard_visual">56dp</dimen>
+    <dimen name="card_height_one_line_large_visual">72dp</dimen>
+
+    <!--  Card Height Two Line  -->
+    <dimen name="card_height_two_line_no_visual">64dp</dimen>
+    <dimen name="card_height_two_line_with_visual">72dp</dimen>
+
+    <!--  Card Height Three Line  -->
+    <dimen name="card_height_three_line">88dp</dimen>
+
+</resources>

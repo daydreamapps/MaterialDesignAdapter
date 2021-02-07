@@ -11,7 +11,6 @@ internal object TransitionOptions {
         val transitionViews: Array<Pair<View, String>> = listOfNotNull(
             transitionPair(ViewUtils.firstLine(rootView), TransitionNames.firstLine),
             transitionPair(ViewUtils.secondLine(rootView), TransitionNames.secondLine),
-            transitionPair(ViewUtils.overLine(rootView), TransitionNames.overLine),
             transitionPair(ViewUtils.visualStart(rootView), TransitionNames.visual)
         ).toTypedArray()
 

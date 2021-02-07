@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.daydreamapplications.adapter.data.MaterialDesignListItem" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height_two_line_with_visual"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/content_margin_small"
+            android:paddingEnd="@dimen/content_margin_small"
+            android:paddingBottom="@dimen/content_margin_small"
+            tools:ignore="RtlSymmetry">
+
+            <include
+                android:id="@+id/container_visual"
+                layout="@layout/content_visual_large"
+                tools:viewModel="@{viewModel}" />
+
+            <include
+                android:id="@+id/text"
+                layout="@layout/content_text_two_lines"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/content_margin_standard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/container_visual"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:viewModel="@{viewModel}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
