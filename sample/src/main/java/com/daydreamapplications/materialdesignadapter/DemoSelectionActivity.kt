@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityDemoSelectionBinding
 import com.daydreamapplications.materialdesignadapter.network.NetworkDemoActivity
 import com.daydreamapplications.materialdesignadapter.simple.lines.OneLineListItemsActivity
+import com.daydreamapplications.materialdesignadapter.simple.lines.ThreeLineListItemsActivity
 import com.daydreamapplications.materialdesignadapter.simple.lines.TwoLineListItemsActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.LargeVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.MediumVisualItemsSampleActivity
@@ -31,6 +32,7 @@ class DemoSelectionActivity : AppCompatActivity() {
         // By Line Count
         binding.buttonOneLine.setOnClickListener { startActivity(OneLineListItemsActivity::class) }
         binding.buttonTwoLine.setOnClickListener { startActivity(TwoLineListItemsActivity::class) }
+        binding.buttonThreeLine.setOnClickListener { startActivity(ThreeLineListItemsActivity::class) }
 
         // By Visual Size
         binding.buttonTextOnly.setOnClickListener { startActivity(TextOnlyListItemsActivity::class) }
