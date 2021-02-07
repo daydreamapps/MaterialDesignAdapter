@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.daydreamapplications.adapter.MaterialDesignBindingAdapter
 import com.daydreamapplications.adapter.data.MaterialDesignListItem
 import com.daydreamapplications.adapter.layouts.Decorators
-import com.daydreamapplications.adapter.layouts.visual.TextOnlyLayouts
+import com.daydreamapplications.adapter.layouts.visual.SmallVisualLayouts
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityListBinding
 import com.daydreamapplications.materialdesignadapter.simple.SimpleListItem
 
-class TextOnlyListItemsActivity : AppCompatActivity() {
+class SmallVisualItemsSampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,8 +27,8 @@ class TextOnlyListItemsActivity : AppCompatActivity() {
 
     private val viewModels: List<MaterialDesignListItem>
         get() = listOf(
-            TextOnlyLayouts.one,
-            TextOnlyLayouts.two,
-            TextOnlyLayouts.three
+            SmallVisualLayouts.one,
+            SmallVisualLayouts.two,
+            SmallVisualLayouts.three
         ).map(::SimpleListItem)
 }

@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityDemoSelectionBinding
 import com.daydreamapplications.materialdesignadapter.network.NetworkDemoActivity
+import com.daydreamapplications.materialdesignadapter.simple.visual.SmallVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.TextOnlyListItemsActivity
 import kotlin.reflect.KClass
 
@@ -24,7 +25,7 @@ class DemoSelectionActivity : AppCompatActivity() {
     private fun initButtons(binding: ActivityDemoSelectionBinding) {
         //  Simple Examples
         binding.buttonTextOnly.setOnClickListener { startActivity(TextOnlyListItemsActivity::class) }
-        binding.buttonSmallVisual.setOnClickListener { }
+        binding.buttonSmallVisual.setOnClickListener { startActivity(SmallVisualItemsSampleActivity::class) }
         binding.buttonMediumVisual.setOnClickListener { }
         binding.buttonLargeVisual.setOnClickListener { }
 
