@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".simple.lines.OneLineListItemsActivity"/>
+
         <activity android:name=".simple.visual.TextOnlyListItemsActivity"/>
         <activity android:name=".simple.visual.SmallVisualItemsSampleActivity"/>
         <activity android:name=".simple.visual.MediumVisualItemsSampleActivity"/>

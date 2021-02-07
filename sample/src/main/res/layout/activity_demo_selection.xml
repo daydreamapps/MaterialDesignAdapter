@@ -10,6 +10,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
+        android:text="By Line Count"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_one_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="One Line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="By Visual Size"
         android:textSize="18sp" />
 
