@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.daydreamapplications.materialdesignadapter.databinding.ActivityDemoSelectionBinding
 import com.daydreamapplications.materialdesignadapter.network.NetworkDemoActivity
+import com.daydreamapplications.materialdesignadapter.simple.visual.LargeVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.MediumVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.SmallVisualItemsSampleActivity
 import com.daydreamapplications.materialdesignadapter.simple.visual.TextOnlyListItemsActivity
@@ -24,11 +25,12 @@ class DemoSelectionActivity : AppCompatActivity() {
     }
 
     private fun initButtons(binding: ActivityDemoSelectionBinding) {
+
         //  Simple Examples
         binding.buttonTextOnly.setOnClickListener { startActivity(TextOnlyListItemsActivity::class) }
         binding.buttonSmallVisual.setOnClickListener { startActivity(SmallVisualItemsSampleActivity::class) }
         binding.buttonMediumVisual.setOnClickListener { startActivity(MediumVisualItemsSampleActivity::class) }
-        binding.buttonLargeVisual.setOnClickListener { }
+        binding.buttonLargeVisual.setOnClickListener { startActivity(LargeVisualItemsSampleActivity::class) }
 
         // Further Examples
         binding.buttonNetworkExample.setOnClickListener { startActivity(NetworkDemoActivity::class) }

@@ -2,7 +2,7 @@ package com.daydreamapplications.adapter.layouts.visual
 
 import com.daydreamapplications.adapter.R
 
-object LargeVisual : LineCount {
+object LargeVisualLayouts : LineCount {
 
     override val one: Int
         get() = R.layout.card_large_one_line
